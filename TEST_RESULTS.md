@@ -66,6 +66,9 @@ in the app and in `tools/rhymes-source.json`:
 
 ## Publish evidence
 
-- Repo: https://github.com/fahad3235/nursery-rhyme-bd
-- Pages: https://fahad3235.github.io/nursery-rhyme-bd/
-- (Filled in after the push/Pages steps below.)
+- Repo: https://github.com/fahad3235/nursery-rhyme-bd (PUBLIC, created empty via browser 10:06 +06)
+- Commit: `5de04c39bb5205ca886a3e60ea5d9da56edcd4b7` on main, 14 files, single snapshot push (approval granted); first push attempt was killed by a service restart, remote verified still empty before retry.
+- Pages: enabled via browser 10:30 +06 (main, / root). Live: https://fahad3235.github.io/nursery-rhyme-bd/ — HTTP 200 verified by curl 10:32 +06; live index.html byte-identical to local; css/style.css, js/rhymes.js, js/app.js all HTTP 200.
+- Remote verification: `list_commits` shows the commit; `get_file_contents` index.html + js/i18n.js + tools/rhymes-source.json all intact (Bengali `\u` escapes and raw Bengali).
+- Sync record `builds/nursery-rhyme-bd.muse-github-snapshot-sync.json` written manually — the push-files CLI did not create it.
+- Status: PUBLISHED_AND_VERIFIED.
